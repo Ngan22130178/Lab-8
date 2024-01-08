@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floral World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+            <div class="logo">
+                <img  src="images/logo.png" alt="Logo">
+            </div>
+            <nav class="sidebar">     
+                <ul class="nav">
+                    <label for="menu">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <li> 
+                       <!-- Thanh tìm kiếm -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Tìm kiếm" id="searchInput">
+                    <button onclick="searchProducts()">Search</button>
+                </div>
+                </li>
+                    <li>
+                        <a
+                           
+                            href="index.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                           
+                            href="about.html"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            target="_blank"
+                           
+                            href="contact.html"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+    </header>  
+       
+     <div class="banner">
+            <h1>Welcome to Floral World!</h1>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1></h1>
+        <div class="filter-container">
+            <div class="filter-container">
+                <label for="categoryFilter">Filter by Category:</label>
+                <select id="categoryFilter" onchange="filterResults()">
+                    <option value="all">All Categories</option>
+                    <option value="hue">Hoa Huệ</option>
+                    <option value="linhlan">Linh Lan</option>
+                    <option value="sen">Hoa Sen</option>
+                    <!-- Add more categories as needed -->
+                </select>
+            </div>
+        </div>
+
+        <main id="galleryContainer">
+            <!-- Display product gallery here -->
+            
+            <div class="product" data-name="Product 1" data-category="hue">
+                <img src="images/CamHueTrang.jpg" alt="Product 1">
+                <h3>Hoa Huệ Cắm Bình</h3>
+            </div>
+            <div class="product" data-name="Product 2" data-category="hue">
+                <img src="images/HueTrang.jpg" alt="Product 2">
+                <h3>Hoa Huệ</h3>
+            </div>
+            <div class="product" data-name="Product 3" data-category="linhlan">
+                <img src="images/LinhLanHong.webp" alt="Product 3">
+                <h3>Linh Lan Hồng</h3>
+            </div>
+            <div class="product" data-name="Product 4" data-category="linhlan">
+                <img src="images/LinhLanTrang.webp" alt="Product 4">
+                <h3>Linh Lan Trắng</h3>
+            </div>
+            <div class="product" data-name="Product 5" data-category="linhlan">
+                <img src="images/LinhLanXanh.webp" alt="Product 5">
+                <h3>Linh Lan Xanh</h3>
+            </div>
+            <div class="product" data-name="Product 6" data-category="sen">
+                <img src="images/SenHong.jpg" alt="Product 6">
+                <h3>Sen Hồng</h3>
+            </div>
+            <div class="product" data-name="Product 7" data-category="sen">
+                <img src="images/SenTrang.jpg" alt="Product 7">
+                <h3>Sen Trắng</h3>
+            </div>
+            <div class="product" data-name="Product 8" data-category="sen">
+                <img src="images/SenXanh.jpg" alt="Product 8">
+                <h3>Sen Xanh</h3>
+            </div>
+        
+            <!-- Add more product items as needed -->
+        </main>
+       
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Floral World. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Animations and Guided Actions -->
+    <script src="script.js"></script>
+</body>
+</html>
